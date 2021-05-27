@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skrollr捲動式網頁</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/aec3fd68b3.js" crossorigin="anonymous"></script>
+    <!-- boots -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- skrollr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js" integrity="sha512-A2+khatRDWHUE2VUtN4xUTkr1nc4YfDBw9Sg3ea6x0aRPfpcYieDZji4D2edDHy/yF5NsYzP7kL8sSM8s5EqCw==" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 導覽列 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light">
+        <!-- Brand -->
+        <a id="col" class="navbar-brand coll" href="#">PRINT</a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a id="col" class="nav-link dro pdown-toggle coll" id="navbardrop" data-toggle="dropdown" href="#">言語</a>
+                <div class="dropdown-menu">
+                    <a id="col" class="dropdown-ite m coll chn">繁體中文</a>
+                    <a id="col" class="dropdown-ite m coll jp">日本語</a>
+                </div>
+            </li>
+            <li><a id="col" class="nav-link coll" href="#section_ask">引言 INTRO</a></li>
+            <li><a id="col" class="nav-link coll" href="#section_about">簡介 ABOUT</a></li>
+            <li><a id="col" class="nav-link coll" href="#section_story">故事 STORY</a></li>
+            <li><a id="col" class="nav-link coll" href="#section_future">未來 FUTURE</a></li>
+          </ul>
+        </div> 
+      </nav>
+
+    <header class="jumbotron">
+        <div class="container">
+            <h1 data-0="transform: translateY(-50px)" data-500="transform: translateY(100px)">印刷術，知識的複製與革命</h1>
+            <hr data-0="transform: translateY(-50px); max-width: 100px" data-500="transform: translateY(100px); max-width: 500px">
+            <h4 data-0="opacity: 1" data-250="opacity: 0">對人類文化知識的傳播起到了決定性的作用</h4>
+        </div>
+    </header>
+    <section id="section_ask">
+        <div class="container">
+            <div class="row">
+                <div data-0="transform: translateX(-200px)" data-500="transform: translateX(0px)" class="col-sm-5 img"></div>
+                <div data-300="opacity: 0" data-500="opacity: 1" class="col-sm-7">
+                    <h2>如果今天沒有印表機，一本書需要花多久產生呢?</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section_about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 data-bottom-top="transform: translateY(-50px); opacity: 0" data-center="transform: translateY(0px); opacity: 1">印刷的故事</h1>
+                    <hr>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="img_cut"><img src="img/story_1.jpg"  data-bottom-top="transform: translateY(-50px); opacity: 0" data-center="transform: translateY(0px); opacity: 1 alt=""></div>   
+                    <h3 id="t_1" data-bottom-top="transform: translateY(-50px); opacity: 0" data-center="transform: translateY(0px); opacity: 1">起源</h3>
+                    <p id="p_1" data-bottom-top="transform: translateY(-50px); opacity: 0" data-center="transform: translateY(0px); opacity: 1">世界上最早的雕版印刷是中國發明的。十九世紀末曾有日本學者島田主張中國在6世紀的六朝就有雕版印刷，根據是北齊顏之推《顏氏家訓》有「書本」一詞；又根據明《河汾燕閑錄》中「隋開皇十三年十二月八日敕廢像遺經悉令雕版」一語，認為最晚在隋朝已有雕版印刷。</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="img_cut"><img src="img/story_2.jpg"  data-bottom-top="transform: translateY(-50px); opacity: 0" data-center="transform: translateY(0px); opacity: 1 alt=""></div>
+                    <h3 data-bottom-top="transform: translateY(-50px); opacity: 0" data-center="transform: translateY(0px); opacity: 1" id="t_2">活字印刷</h3>
+                    <p data-bottom-top="transform: translateY(-50px); opacity: 0" data-center="transform: translateY(0px); opacity: 1" id="p_2">由中國北宋1040年的畢昇發明。由當時著名科學家沈括的《夢溪筆談》記載保存，完整無遺地包括制字、貯字、排版、拆板和刷印等一整套活字印刷術工序，與後世鉛字排版的原理完全相同。</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="img_cut"><img src="img/story_3.jpg"  data-bottom-top="transform: translateY(-50px); opacity: 0" data-center="transform: translateY(0px); opacity: 1 alt=""></div>
+                    <h3 data-bottom-top="transform: translateY(-50px); opacity: 0" data-center="transform: translateY(0px); opacity: 1" id="t_3">歐洲</h3>
+                    <p data-bottom-top="transform: translateY(-50px); opacity: 0" data-center="transform: translateY(0px); opacity: 1" id="p_3">歐洲同中國一樣，最先出現的是雕版印刷，爾後出現的是活字印刷。歐洲人發現中國的活字印刷比雕版印刷效率更高於是很快就把雕版印刷淘汰掉了。<br><br>關於中國印刷術傳入歐洲的路線，在很多著作中所談的有三條。一條是歐洲的傳教士和旅行家直接把中國的印刷術帶到歐洲；另一條是經由中亞、西亞、北非，最後傳到歐洲；第三條則是由俄國人傳到歐洲其他國家。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section_story">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5" data-bottom-top="background-size: 150%; background-position: 0% 0%" data-center="background-size: 100%; background-position: 50% 50%">
+                    <div class="cross">x</div>
+                </div>
+                <div class="col-md-7">
+                    <div class="col-sm-12">
+                        <h2 id="t_4">印刷對知識傳播的影響</h2>
+                        <hr>
+                    </div>
+                    <div class="row row-mg">
+                        <div class="col-sm-4" data-bottom-top="transform: scale(1.5); opacity: 0" data-center="transform: scale(1); opacity: 1">
+                            <i class="fa fa-files-o" aria-hidden="true"></i>
+                            <h4 id="i_1">快速複製</h4>
+                        </div>
+                        <div class="col-sm-4" data-bottom-top="transform: scale(1.5); opacity: 0" data-center="transform: scale(1); opacity: 1">
+                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                            <h4 id="i_2">知識傳遞</h4>
+                        </div>
+                        <div class="col-sm-4" data-bottom-top="transform: scale(1.5); opacity: 0" data-center="transform: scale(1); opacity: 1">
+                            <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                            <h4 id="i_3">文化保存</h4>
+                        </div>
+                        <div class="col-sm-12">
+                            <p id="p_4">
+                                印刷機的開發使知識的傳播發生了革命性的變化：1469年在威尼斯成立第一家印刷社（即出版社），1500年該城就有印刷廠417家。1476年，威廉·卡克斯頓在英格蘭成立第一家印刷社°在1539年，西班牙人Juan Pablos在墨西哥的墨西哥城。Stephen Day於1628年在美國麻塞諸塞海灣地區建立了北美第一家印刷社，並協助成立了劍橋出版社。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section_future">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>現代的印刷術</h2>
+                    <hr>
+                </div>
+                <div class="col-md-6 left">
+                    <img src="img/future_1.jpg" alt="" data-bottom-top="filter: grayscale(100%)" data-center="filter: grayscale(0%)">
+                </div>
+                <div class="col-md-6">
+                    <div class="col-md-12 pad" data-bottom-top="transform: translateX(50px)" data-center="transform: translateX(0px)">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                        <h3 id="t_5">電腦印刷</h3>
+                        <p id="t_5_1">文件可通過雷射印字機、噴墨印表機或其它電腦印表機。在最近幾年，計算機列印和工業化印刷工藝已經融合在一起，導致數位印刷的發展。</p>
+                        <p id="t_5_2">在電子技術迅速發展的過程中，印刷進入了電子控制和自動化的時期，電子排版、電子分色、電子雕版廣泛應用，在印刷質量和效率上都得到了巨大提高。計算機的應用繼續將印刷帶入了數字印刷時代，使傳統工藝難於完成的小品種、多變化印刷得以順利實現。</p>
+                    </div>
+                    <div class="col-md-12 pad" data-bottom-top="transform: translateX(50px)" data-center="transform: translateX(0px)">
+                        <i class="fa fa-cubes" aria-hidden="true"></i>
+                        <h3 id="t_6">三維列印</h3>
+                        <p id="t_6_1">三維列印 是一種製造技術，物體是由三維文件和三維印表機生成。物體製造是通過一層層材料的疊加而列印出來. 在2012年, 一些公司例如Sculpteo或Shapeways提出網上的三維列印解決方案</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="jumbotron">
+        <div class="container">
+            <h2 id="end_1">想要了解更多的故事嗎?</h2>
+            <input class="form-control" type="email" placeholder="Email">
+            <hr>
+            <button id="end_2" class="btn btn-light">訂閱故事</button>
+        </div>
+    </footer>     
+    <script src="scrpit.js"></script>
+</body>
+</html>

@@ -10,7 +10,7 @@ Bootstrap4とskrollrjsを学習するために作った作品です。
 ![](https://i.imgur.com/IUHV4Qo.jpg)
 
 
-![demo](https://i.imgur.com/IUL9mRw.gif)
+![](https://i.imgur.com/IUL9mRw.gif)
 
 
 
